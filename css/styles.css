@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*VARIABLES DE COLORES*/
+
+:root{
+
+    --White: hsl(0, 0%, 100%);
+    --Lightgray: hsl(212, 45%, 89%);
+    --Grayishblue: hsl(220, 15%, 55%);
+    --Darkblue: hsl(218, 44%, 22%);
+}
+/*BODY*/
+body{
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--Lightgray);
+}   
+
+/* CARDS */
+
+.cards-container{
+    display: flex;
+    margin: 0 auto;
+    width: 1200px;
+}
+
+
+/* MAIN CONTAINER */
+
+.main-container{
+    background-color: var(--White);
+    width: 320px;
+    height: 500px;
+    margin: 60px auto;
+    border-radius: 16px;
+    padding: 16px;
+    transition: 300ms;
+}
+
+.main-container:hover{
+
+    cursor: pointer;
+    box-shadow: 10px 10px 10px;
+    transition: 300ms;
+    margin-top: 50px;
+
+}
+.img-container{
+    background-image: url(../images/image-qr-code.png);
+    width: 100%;
+    height: 288px;
+    background-size: cover;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    animation: UpCenter 500ms none;
+}
+
+
+h1{
+    color: var(--Darkblue);
+    font-size: 23px;
+    text-align: center;
+    margin-bottom: 24px;
+    margin: 0 15px;
+}
+
+p{
+    font-size: 15px;
+    color: var(--Grayishblue);
+    text-align: center;
+    margin: 0 15px;
+}
+
+
+/*QUERYS*/
+
+@media (max-width :800px) {
+    
+    .cards-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        
+    }
+
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+/*FOOTER*/
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
